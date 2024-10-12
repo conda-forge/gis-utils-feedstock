@@ -1,13 +1,13 @@
 {% set name = "gis-utils" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gis-utils-{{ version }}.tar.gz
-  sha256: 8800e08203a200c78693982ecc7838d475ded2bd1f8e1adac7855b43cabb0526
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 1d3ffc7e388f1f72b518fc1eb4c54f11122e1884686225dc2ba9e98f680f1a91
 
 build:
   noarch: python
