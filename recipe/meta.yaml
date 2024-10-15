@@ -30,6 +30,8 @@ requirements:
     - fiona
     - shapely
     - pyproj
+    - rasterio
+
 
 test:
   imports:
